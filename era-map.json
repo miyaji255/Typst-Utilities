@@ -1,0 +1,47 @@
+[
+    {
+        "from": {
+            "year": 2019,
+            "month": 5,
+            "day": 1
+        },
+        "name": "令和",
+        "alphabet": "R"
+    },
+    {
+        "from": {
+            "year": 1989,
+            "month": 1,
+            "day": 8
+        },
+        "name": "平成",
+        "alphabet": "H"
+    },
+    {
+        "from": {
+            "year": 1926,
+            "month": 12,
+            "day": 25
+        },
+        "name": "昭和",
+        "alphabet": "S"
+    },
+    {
+        "from": {
+            "year": 1912,
+            "month": 7,
+            "day": 30
+        },
+        "name": "大正",
+        "alphabet": "T"
+    },
+    {
+        "from": {
+            "year": 1868,
+            "month": 1,
+            "day": 25
+        },
+        "name": "明治",
+        "alphabet": "M"
+    }
+]
