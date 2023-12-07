@@ -28,10 +28,13 @@
   )
 }
 
-#fmt-float("12687.326482", 2, is-equation: false)
+#fmt-float("12687.326482", accuracy: 2, is-equation: false)
 
-#fmt-float("1.48148E-07", 3)
+#fmt-float("1.48148E-07")
 
-#fmt-float("-1481.48E", 3)
+#fmt-float("-1481.48E")
 
-#fmt-float("70", 3)
+#fmt-float("74", accuracy: 1)
+
+#fmt-float("1235")
+

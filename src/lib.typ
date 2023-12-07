@@ -1,5 +1,3 @@
-
-
 #let _era-map = json("./era-map.json").map(
   era => (
     :..era,
@@ -110,7 +108,7 @@
 
 #let fmt-float(
   value,
-  accuracy,
+  accuracy: 3,
   dot: math.dot,
   is-equation: true,
   ignore-invalid: true,
@@ -129,7 +127,7 @@
   }
   let (digits, base) = _get-digits(value)
 
-  let valuestr = str(value / base)
+  let valuestr = str(calc.round(value / base, digits: accuracy - 1))
   if valuestr.contains(".") or valuestr.contains(",") {
     while valuestr.len() < accuracy + 1 {
       valuestr += "0";
@@ -147,8 +145,8 @@
   }
 
   if is-equation {
-    return $valuestr dot 10^digits$
+    return $valuestr#"\u{200D}"dot#"\u{200D}"10^digits$
   } else {
-    return [#valuestr #dot 10#super(str(digits))]
+    return [#valuestr#"\u{00A0}"#dot#"\u{00A0}"10#super(str(digits))]
   }
 }
