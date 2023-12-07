@@ -1,4 +1,4 @@
-#import "./lib.typ": display-era, fmt-float
+#import "exports.typ": *
 
 #let experiment_date = datetime(year: 2023, month: 11, day: 1)
 
